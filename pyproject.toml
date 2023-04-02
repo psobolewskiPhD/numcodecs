@@ -111,5 +111,7 @@ norecursedirs = [
 
 [tool.cibuildwheel]
 [[tool.cibuildwheel.overrides]]
+select = "*-macosx_x86"
+environment = { DISABLE_NUMCODECS_AVX2=1 }
 select = "*-macosx_arm64"
-environment = { DISABLE_NUMCODECS_SSE2="" }
+environment = { DISABLE_NUMCODECS_SSE="" }
