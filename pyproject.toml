@@ -108,3 +108,8 @@ norecursedirs = [
     "notebooks",
     "numcodecs.egg-info",
 ]
+
+[tool.cibuildwheel]
+[[tool.cibuildwheel.overrides]]
+select = "*-macosx_arm64"
+environment = { DISABLE_NUMCODECS_SSE2="" }
