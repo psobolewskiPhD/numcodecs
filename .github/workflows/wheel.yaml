@@ -14,7 +14,6 @@ jobs:
       CIBW_TEST_COMMAND: pytest --pyargs numcodecs
       CIBW_TEST_REQUIRES: pytest
       CIBW_SKIP: "pp* cp36-* *-musllinux_* *win32 *_i686 *_s390x"
-      CIBW_ENVIRONMENT: "DISABLE_NUMCODECS_AVX2=1"
       CIBW_ARCHS_MACOS: 'x86_64 arm64'
       CIBW_TEST_SKIP: '*-macosx_arm64'
 
