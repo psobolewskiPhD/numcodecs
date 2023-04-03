@@ -116,5 +116,3 @@ environment = { MACOSX_DEPLOYMENT_TARGET=10.9, CFLAGS="$CFLAGS -Wno-implicit-fun
 [[tool.cibuildwheel.overrides]]
 select = "*-macosx_arm64"
 environment = { DISABLE_NUMCODECS_SSE2=1 }
-
-
